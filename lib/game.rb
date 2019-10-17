@@ -1,21 +1,19 @@
-#require 'pry'
-
 
 class Game < Show
-  #TO DO : la classe a plusieurs attr_accessor: le current_player (égal à un objet Player), le status (en cours, nul ou un objet Player s'il gagne), le Board et un array contenant les 2 joueurs.
+  
 attr_accessor  :player_array, :player1, :player2
 
 attr_accessor :board_case_array
 
 
   def initialize
-    #TO DO : créé 2 joueurs, créé un board, met le status à "on going", défini un current_player
+    
 
-# 1- Création des joueurs 
+# 1- Création des joueurs et message de bienvenue
 
 
 
-    puts "Bienvenue sur le jeu du morpion !!"
+    puts "                                       Bienvenue sur le jeu du morpion !!"
 
     puts "                                         1             2             3          "
     puts "                                                                                "
@@ -28,6 +26,8 @@ attr_accessor :board_case_array
     puts "                                 C              |              |                "
     puts "                                                |              |                "
                                                  
+
+#On créée nos deux players et on les met dans un array
 
 @player_array = []
 
@@ -52,7 +52,7 @@ puts player1.name
   end
 
   def turn
-
+#Cette def utilise trois méthodes, show_board, play_turn et victory? pour mettre en place le jeu
   
     #show_board
     play_turn
