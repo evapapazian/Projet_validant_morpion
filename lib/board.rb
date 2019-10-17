@@ -17,8 +17,8 @@ attr_accessor :board_case_array
  	@@board_case_array << celluleB1 = BoardCase.new("","B1")
   	@@board_case_array << celluleB2 = BoardCase.new("","B2")
   	@@board_case_array << celluleB3 = BoardCase.new("","B3")
-    @@board_case_array << celluleC1 = BoardCase.new("","C1")
-    @@board_case_array << celluleC2 = BoardCase.new("","C2")
+    	@@board_case_array << celluleC1 = BoardCase.new("","C1")
+    	@@board_case_array << celluleC2 = BoardCase.new("","C2")
   	@@board_case_array << celluleC3 = BoardCase.new("","C3")
 
  
